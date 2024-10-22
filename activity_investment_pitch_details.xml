@@ -45,6 +45,43 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"/>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/systemTeaserWebView1">
+
+                    <!-- Request Investment Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/request_investment_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Accept Investment\nRequest"
+                        android:background="@drawable/chat_rounded"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"/>
+
+                    <!-- Request Mentorship Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/request_mentorship_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Accept Mentorship\nRequest"
+                        android:background="@drawable/project_rounded"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp" />
+
+                </LinearLayout>
                 <androidx.appcompat.widget.AppCompatButton
                     style="@android:style/Widget.Button"
                     android:layout_width="match_parent"
