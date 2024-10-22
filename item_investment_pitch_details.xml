@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/progress_details_background"
+        >
+
+        <LinearLayout
+            android:id="@+id/startupNameProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvStartupName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="Bright Hatch"
+                android:textColor="#1073ad"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProjectName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Management System"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Horizontal line as a divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#ececec"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/startupNameProject"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvAboutLabel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="About Our Project"
+            android:textColor="#1073ad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="46dp"
+            app:layout_constraintTop_toBottomOf="@id/startupNameProject"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvAboutProject1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A platform designed to streamline operations by integrating employee management, payroll, project tracking, and reporting."
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvAboutLabel1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tvProjectLinkLabel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Project Links"
+            android:textColor="#1073ad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@id/tvAboutProject1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvProjectLink1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="www.projectlink.com"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/progress_check_background"
+            android:autoLink="web"
+            android:linksClickable="true"
+            app:layout_constraintTop_toBottomOf="@id/tvProjectLinkLabel1"
+            app:layout_constraintStart_toStartOf="@id/tvProjectLinkLabel1"
+            app:layout_constraintEnd_toEndOf="@id/tvProjectLinkLabel1"/>
+
+        <TextView
+            android:id="@+id/tvProjectPDFLabel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Project PDF"
+            android:textColor="#1073ad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@id/tvProjectLink1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvProjectPDF1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="https://bit.ly/3YiCwcN"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/progress_check_background"
+            android:autoLink="web"
+            android:linksClickable="true"
+            app:layout_constraintTop_toBottomOf="@id/tvProjectPDFLabel1"
+            app:layout_constraintStart_toStartOf="@id/tvProjectPDFLabel1"
+            app:layout_constraintEnd_toEndOf="@id/tvProjectPDFLabel1"/>
+
+
+        <TextView
+            android:id="@+id/tvSystemTeaserLabel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="System Teaser"
+            android:textColor="#1073ad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@id/tvProjectPDF1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <WebView
+            android:id="@+id/systemTeaserWebView1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvSystemTeaserLabel1"
+            app:layout_constraintStart_toStartOf="@id/tvSystemTeaserLabel1"
+            app:layout_constraintEnd_toEndOf="@id/tvSystemTeaserLabel1"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
